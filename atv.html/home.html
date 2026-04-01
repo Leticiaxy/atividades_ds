@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div align="center">
+        <h1>Cadastro</h1>
+        <form action="/enviar" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="'senha"><br><br>
+            <span> Você é: </span>
+            <button type="button" onclick="Professor()">Sou Professor(a)</button>
+            <button type="button" onclick="Aluno()">Sou Aluno</button>
+        </form>
+</div>
+</div>
+<script>
+    function Professor(){
+        window.location.href = "professor.html";
+    
+    }
+    function Aluno(){
+        window.location.href = "aluno.html";
+    }
+</script>
+</body>
+</html>
